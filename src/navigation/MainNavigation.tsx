@@ -2,13 +2,18 @@
 
 
 import { StyleSheet, Text, View } from 'react-native'
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react'
 
+const Stack = createNativeStackNavigator()
 const MainNavigation = () => {
   return (
-    <View>
-      <Text>MainNavigation</Text>
-    </View>
+    <Stack.Navigator>
+        {
+            screenCol
+        }
+
+    </Stack.Navigator>
   )
 }
 

@@ -19,3 +19,14 @@ export const authStack = [
         component: RegisterScreen
     }
 ]
+
+export const dashboardStack = [
+    {
+        name: "HomeScreen",
+        component: HomeScreen
+    },
+]
+
+
+
+export const mergedStack = [...authStack];
