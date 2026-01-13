@@ -38,9 +38,9 @@ const TabIconFocused: FC<TabProps> = ({name}) => {
   );
 };
 
-// export const HomeTabIcon: FC<IconProp> = ({focused}) => {
-//   return focused ? <TabIconFocused name="Home" /> : <TabIcon name="Home" />;
-// };
+export const HomeTabIcon: FC<IconProp> = ({focused}) => {
+  return focused ? <TabIconFocused name="Home" /> : <TabIcon name="Home" />;
+};
 
 // export const ProfileTabIcon: FC<IconProp> = ({focused}) => {
 //   return focused ? (
