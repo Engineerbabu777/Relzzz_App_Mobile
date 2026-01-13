@@ -26,3 +26,12 @@ export async function resetAndNavigate(routeName: string) {
     );
   }
 }
+
+
+
+export async function goBack() {
+  await navigationRef.isReady();
+  if (navigationRef.isReady()) {
+    navigationRef.dispatch(CommonActions.goBack());
+  }
+}
