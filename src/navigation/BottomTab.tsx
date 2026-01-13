@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unstable-nested-components */
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from '../screens/dashboard/HomeScreen';
@@ -6,6 +7,7 @@ import { FC } from 'react';
 import { Platform } from 'react-native';
 import { RFValue } from "react-native-responsive-fontsize";
 import { Colors } from '../constants/Colors';
+import { HomeTabIcon, ProfileTabIcon } from './TabIcon';
 
 
 const Tab = createBottomTabNavigator();
@@ -31,12 +33,12 @@ const BottomTab: FC = () => {
                     tabBarShowLabel: false,
                 },
                 tabBarIcon: ({ focused }) => {
-                    // if (route.name === 'Home') {
-                    //     return <HomeTabIcon focused={focused} />;
-                    // }
-                    // if (route.name === 'Profile') {
-                    //     return <ProfileTabIcon focused={focused} />;
-                    // }
+                    if (route.name === 'Home') {
+                        return <HomeTabIcon focused={focused} />;
+                    }
+                    if (route.name === 'Profile') {
+                        return <ProfileTabIcon focused={focused} />;
+                    }
                 },
             })}
         >
