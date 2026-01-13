@@ -1,6 +1,7 @@
 import LoginScreen from "../screens/auth/LoginScreen";
 import RegisterScreen from "../screens/auth/RegisterScreen";
 import SplashScreen from "../screens/auth/SplashScreen";
+import HomeScreen from "../screens/dashboard/HomeScreen";
 
 
 export const authStack = [
@@ -29,4 +30,4 @@ export const dashboardStack = [
 
 
 
-export const mergedStack = [...authStack];
+export const mergedStack = [...authStack,...dashboardStack];

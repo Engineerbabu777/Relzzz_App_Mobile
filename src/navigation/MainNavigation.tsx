@@ -1,22 +1,26 @@
 
 
 
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet } from 'react-native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react'
+import { mergedStack } from './ScreenCollection';
 
 const Stack = createNativeStackNavigator()
 const MainNavigation = () => {
-  return (
-    <Stack.Navigator>
-        {
-            screenCol
-        }
+    return (
+        <Stack.Navigator>
+            {
+                mergedStack.map((screen) => {
+                    const { name, component } = screen;
+                    return (
+                        <Stack.Screen key={name} name={name} component={component} />
+                    )
+                })
+            }
 
-    </Stack.Navigator>
-  )
+        </Stack.Navigator>
+    )
 }
 
 export default MainNavigation
-
-const styles = StyleSheet.create({})
