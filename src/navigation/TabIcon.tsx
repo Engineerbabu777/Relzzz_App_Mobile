@@ -1,11 +1,7 @@
-// import {FC} from 'react';
 import Home from '../assets/icons/home.png';
 import HomeFocused from '../assets/icons/homeFocused.png';
 import Profile from '../assets/icons/profile.png';
 import ProfileFocused from '../assets/icons/profileFocused.png';
-// import {Image} from 'react-native';
-// // import {bottomBarStyles} from '../styles/NavigationBarStyles';
-// import {Colors} from '../constants/Colors';
 
 import { Image } from "react-native";
 import { bottomBarStyles } from "../styles/NavigationBarStyles";
