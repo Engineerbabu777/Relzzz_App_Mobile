@@ -3,9 +3,10 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import MainNavigation from './MainNavigation';
+import { navigationRef } from '../utils/navigation.utils';
 
 const Navigation: React.FC = () => {
-    return <NavigationContainer>
+    return <NavigationContainer ref={navigationRef}>
         <MainNavigation />
     </NavigationContainer>
 }
