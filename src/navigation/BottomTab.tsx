@@ -5,6 +5,7 @@ import ProfileScreen from '../screens/dashboard/ProfileScreen';
 import { FC } from 'react';
 import { Platform } from 'react-native';
 import { RFValue } from "react-native-responsive-fontsize";
+import { Colors } from '../constants/Colors';
 
 
 const Tab = createBottomTabNavigator();
@@ -24,7 +25,7 @@ const BottomTab: FC = () => {
                     height: Platform.OS === 'android' ? 70 : 80,
                     borderTopWidth: 0,
                     position: 'absolute',
-                    // tabBarActiveTintColor: Colors.theme,
+                    tabBarActiveTintColor: Colors.theme,
                     tabBarInactiveTintColor: '#447777',
                     headerShadowVisible: false,
                     tabBarShowLabel: false,
