@@ -13,3 +13,16 @@ export async function navigate(name: string, params?: object) {
         navigationRef.dispatch(CommonActions.navigate({ name, params }));
     }
 }
+
+
+export async function resetAndNavigate(routeName: string) {
+  await navigationRef.isReady();
+  if (navigationRef.isReady()) {
+    navigationRef.dispatch(
+      CommonActions.reset({
+        index: 0,
+        routes: [{name: routeName}],
+      }),
+    );
+  }
+}
