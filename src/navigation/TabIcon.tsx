@@ -11,9 +11,9 @@ interface TabProps {
   name: string;
 }
 
-// interface IconProp {
-//   focused: boolean;
-// }
+interface IconProp {
+  focused: boolean;
+}
 
 // const TabIcon: FC<TabProps> = ({name}) => {
 //   return (
