@@ -2,7 +2,8 @@
 
 import {
     createNavigationContainerRef,
-    CommonActions
+    CommonActions,
+    StackActions
 } from "@react-navigation/native";
 
 
@@ -33,5 +34,13 @@ export async function goBack() {
   await navigationRef.isReady();
   if (navigationRef.isReady()) {
     navigationRef.dispatch(CommonActions.goBack());
+  }
+}
+
+
+export async function push(routeName: string, params?: object) {
+  await navigationRef.isReady();
+  if (navigationRef.isReady()) {
+    navigationRef.dispatch(StackActions.push(routeName, params));
   }
 }
