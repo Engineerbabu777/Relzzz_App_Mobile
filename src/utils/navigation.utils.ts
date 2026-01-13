@@ -44,3 +44,8 @@ export async function push(routeName: string, params?: object) {
     navigationRef.dispatch(StackActions.push(routeName, params));
   }
 }
+
+
+export async function prepareNavigation() {
+  await navigationRef.isReady();
+}
