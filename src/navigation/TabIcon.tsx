@@ -7,9 +7,9 @@
 // // import {bottomBarStyles} from '../styles/NavigationBarStyles';
 // import {Colors} from '../constants/Colors';
 
-// interface TabProps {
-//   name: string;
-// }
+interface TabProps {
+  name: string;
+}
 
 // interface IconProp {
 //   focused: boolean;
