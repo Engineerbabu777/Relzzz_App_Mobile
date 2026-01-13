@@ -8,7 +8,11 @@ import { mergedStack } from './ScreenCollection';
 const Stack = createNativeStackNavigator()
 const MainNavigation = () => {
     return (
-        <Stack.Navigator>
+        <Stack.Navigator
+        screenOptions={()=>({
+           headerShown:false 
+        })}
+        >
             {
                 mergedStack.map((screen) => {
                     const { name, component } = screen;
