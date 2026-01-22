@@ -1,18 +1,17 @@
+import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import CustomView from '../../components/global/CustomView';
 
-
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-
-type Props = {}
+type Props = {};
 
 const HomeScreen = (props: Props) => {
   return (
-    <View>
+    <CustomView>
       <Text>HomeScreen</Text>
-    </View>
-  )
-}
+    </CustomView>
+  );
+};
 
-export default HomeScreen
+export default HomeScreen;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});
